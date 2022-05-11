@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /** fonte do "conteudo-principal-escrito-titulo" **/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); /** fonte do "conteudo-principal-escrito-subtitulo" **/
+
+* { /** resetando as configurações do HTML para as configurações que eu quero **/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(-37deg, rgb(22, 135, 237), rgb(32, 133, 9));
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    width: 100px;
+    border-radius: 100%; /* Imagem fica redonda */
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os itens do nav */
+}
+
+.cabecalho-menu-item {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 1000;
+}
+
+.conteudo {
+    border-top: 0.4px solid; /* a borda entre o cabeçalho e o main */
+    margin-bottom: 40px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* espaço entre os elementos */
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: 600px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600px;
+    font-size: 24px;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #FAF3DD;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #313E35;
+    font-family:'Bebas Neue', cursive;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: blue;
+}
+
+.conteudo-principal-imagem {
+    width: 250px;
+    border-radius: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px dashed;
+    padding-top: 48px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.rodape {
+    padding: 5;
+    border-top: 0.4px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape-imagem {
+    height: 400px;
+    padding-top: -50px;
+    margin: -100px;
+}
